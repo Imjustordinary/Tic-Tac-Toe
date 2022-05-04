@@ -1,0 +1,158 @@
+.drop-box {
+  width: 500px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin-top: -150px;
+  margin-left: -250px;
+  background-color: white;
+  border-radius: 10px;
+  position: fixed;
+
+  text-align: center;
+  z-index: 12;
+  box-shadow: rgb(17 17 26 / 10%) 0px 8px 24px,
+    rgb(17 17 26 / 10%) 0px 16px 56px, rgb(17 17 26 / 10%) 0px 24px 80px;
+ 
+}
+
+.drop-box-text-draw {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: x-large;
+
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.ani{
+  animation: dropbox 1.2s ease-in;
+}
+
+@keyframes dropbox {
+  0% {
+    top: -70%;
+  }
+  70% {
+    top: 53%;
+  }
+  85% {
+    top: 47%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  background-color: #00000026;
+  z-index: 10;
+  height: 130%;
+  top: -30px;
+  width: 100%;
+  animation: mymove 0.5s;
+}
+
+@keyframes mymove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.drop-box-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.drop-box-img {
+  width: 100px;
+  margin-top: 30px;
+}
+
+.drop-box-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: x-large;
+
+  margin-top: 10px;
+}
+
+.drop-box-button {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3b3b3b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  font-size: 20px;
+  width: 150px;
+  margin-top: 20px;
+  padding: 10px;
+  min-width: 0;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.drop-box-button:disabled {
+  pointer-events: none;
+}
+
+.drop-box-button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.drop-box-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 600px) {
+  .drop-box-button {
+    width: 120px;
+    height: 50px;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .drop-box-text {
+    font-size: larger;
+  }
+
+  .drop-box-img {
+    width: 65px;
+  }
+
+  .drop-box {
+    width: 285px;
+    height: 215px;
+    left: 50%;
+    top: 50%;
+    margin-top: -107px;
+    margin-left: -142px;
+  }
+
+  .drop-box-text-draw{
+    margin-top: 55px;
+  }
+}

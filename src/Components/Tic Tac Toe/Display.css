@@ -1,0 +1,95 @@
+.holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ticTable {
+  width: 640px;
+  height: 635px;
+
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.eachTic {
+  width: 200px;
+  height: 202px;
+  border: 5px solid #c3c3c3;
+  background-color: white;
+  position: relative;
+}
+
+.right {
+  border-right-color: white;
+}
+
+.left {
+  border-left-color: white;
+}
+
+.top {
+  border-top-color: white;
+}
+
+.bottom {
+  border-bottom-color: white;
+}
+
+.element {
+  top: 50%;
+  margin-top: -75px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .holder {
+    height: 90vh;
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .ticTable {
+    width: 272px;
+    height: 272px;
+    margin-top: 30px;
+  }
+
+  .eachTic {
+    width: 86px;
+    height: 88px;
+    border: 2px solid #c3c3c3;
+    position: relative;
+  }
+  .right {
+    border-right-color: white;
+  }
+
+  .left {
+    border-left-color: white;
+  }
+
+  .top {
+    border-top-color: white;
+  }
+
+  .bottom {
+    border-bottom-color: white;
+  }
+  .element {
+    margin-top: -35px;
+    margin-left: -35px;
+    width: 70px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
